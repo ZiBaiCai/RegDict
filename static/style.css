@@ -1,3 +1,18 @@
+a:link {
+color: #000000;
+text-decoration: none;
+} /* 未被访问的链接 黑色 */
+a:visited {
+color: #00FF00;
+text-decoration: none} /* 已被访问过的链接 绿色 */
+a:hover {
+color: #FFCC00;
+text-decoration: none;} /* 鼠标悬浮在上的链接 橙色 */
+a:active {
+color: #FF0000;
+text-decoration: none} /* 鼠标点中激活链接 红色 */
+
+
 * {
   box-sizing: border-box;
 }
