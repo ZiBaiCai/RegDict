@@ -193,16 +193,16 @@ body {
 .footer {
     font-size: 13px;
     font-family: Georgia;
-    font-style: italic;
+    font-style: normal;
     /* font-weight: 700; */
     text-align: center;
-    color: #797979;
+    color: #000000;
     margin: 1.5em auto;
     text-shadow: 0 1px 0 #eee;
     display: block;
     text-transform: capitalize;
 }
 .footer a {
-    color: #797979;
+    color: #000000;
     text-decoration: none;
 }
