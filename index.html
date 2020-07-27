@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>RegDict - 在线英文词典</title>
+    <meta name="keywords" content="RegDict,regdict.com,www.regdict.com,word.ws,www.word.ws,词典,英文词典,单词词典,在线词典,单词,英语单词,查单词,正则查单词,词根查单词" />
+	<meta name="description" content="RegDict.com，RegDict来源于一个简单的想法，正则查单词或者词根查单词，常见的单词会排在前面。目前支持任意匹配和字符匹配两种方式。"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta name="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="./static/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./static/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./static/img/favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="./static/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="./static/css/normalize.min.css"/>
+  </head>
+  <body>
+    <!-- header -->
+    <div id="header">
+      <div id="logo-container">
+        <a href="/" class="red" title="RegDict" ><img id="logo" src="./static/img/logo.svg"></a>
+      </div>
+      <div id="controller-container">
+        <div id="controller">
+          <input id="search-input" placeholder="请按规则输入关键字母" value="">
+          <button id="help-button">D</button>
+        </div>
+      </div>
+    </div>
+    <!-- examples -->
+    <div id="examples">
+      <div class="example-section">
+        <h1 class="example-title">RegDict简介</h1>
+        <p class="example-content">RegDict来源于一个简单的想法，正则查单词或者词根查单词，常见的单词会排在前面。目前支持任意匹配和字符匹配两种方式，以后会根据需求添加新的规则</p>
+      </div>
+      <div class="example-section">
+        <h1 class="example-title">基本规则</h1>
+        <p class="example-content">* 表示匹配任意个字母（零个或多个）<br>. 表示匹配一个字母</p>
+      </div>
+      <div class="example-section">
+        <h1 class="example-title">精确查询</h1>
+        <h2 class="example-subtitle">fantasy</h2>
+        <p class="example-content">查看单词fantasy</p>
+      </div>
+      <div class="example-section">
+        <h1 class="example-title">前缀查询</h1>
+        <h2 class="example-subtitle">pro*</h2>
+        <p class="example-content">查看前缀为pro的单词</p>
+      </div>
+      <div class="example-section">
+        <h1 class="example-title">后缀查询</h1>
+        <h2 class="example-subtitle">*lity</h2>
+        <p class="example-content">查看后缀为lity的单词</p>
+      </div>
+      <div class="example-section">
+        <h1 class="example-title">固定长度查询</h1>
+        <h2 class="example-subtitle">z....</h2>
+        <p class="example-content">查看z开头含有五个字母的单词</p>
+      </div>
+    </div>
+    <!-- results -->
+    <div id="results">
+    </div>
+    <!-- audio -->
+    <audio id="audio"></audio>
+    <script type="text/javascript" src="./static/javascript/jquery.3.2.1.min.js"></script>
+    <script type="text/javascript" src="./static/javascript/main.js"></script>
+<!-- 统计代码开始 -->
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ffbf3c6f0a9cdfc758d283ef5eca01f3";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- 统计代码结束 -->
+<span class="footer"><p class="copyright">&copy; <a href="https://www.nestattacked.com" title="Nestattacked"  target="_blank">Nestattacked.com</a> | <a href="https://www.regdict.com" title="RegDict">RegDict.com</a> | <a href="https://word.ws" title="Word">Word.ws</a> | <a href="https://long.ge" title="龙哥"  target="_blank">long.ge</a></p></span>
+<!-- php伪静态自动触发 -->
+    <script type='text/javascript'>
+        $(function(){
+             key = $('#search-input').val();   //php时使用
+          if(key == null || key == ""){
+              $('#search-input').focus();
+          }else{
+        　　　　 $('#search-input').val(key);
+              search(key);
+          }
+        }
+　　   );
+    </script>
+<!-- php伪静态自动触发结束 -->
+  </body>
+</html>
