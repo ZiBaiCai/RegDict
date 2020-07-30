@@ -6,11 +6,11 @@ a:visited {
 color: #0066FF;
 text-decoration: none} /* 已被访问过的链接 浅蓝色 */
 a:hover {
-color: 	#008800;
-text-decoration: none;} /* 鼠标悬浮在上的链接 绿色 */
+color: 	#880000;
+text-decoration: none;} /* 鼠标悬浮在上的链接 红色 */
 a:active {
-color: #880000;
-text-decoration: none} /* 鼠标点中激活链接 红色 */
+color: #008800;
+text-decoration: none} /* 鼠标点中激活链接 绿色 */
 
 
 * {
