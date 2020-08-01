@@ -10,7 +10,7 @@
     <meta name="keywords" content="DNS, DNS Servers, Free DNS Servers, Free Public DNS Servers, Free Public DNS Resolver">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.loli.net/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="./font-awesome.min.css">
     <link rel="stylesheet" href="./tooplate-style.css">
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -28,15 +28,15 @@
       </button>
       <div class="zh_nav_box collapse navbar-collapse" id="navbarTogglerDemo01">
         <ul id="zh-nav" class="zh-nav">
-          <li id="home"><a id="home_a" class="nav-text" href="/">Home</a></li>
-          <li id="about"><a id="about_a" class="nav-text" href="/about/">About</a></li>
-          <li id="faq"><a id="faq_a" class="nav-text" href="/faq/">FAQ</a></li>
-          <li id="dot"><a id="dot_a" class="nav-text" href="/dot/">DoT</a></li>
-          <li id="doh"><a id="doh_a" class="nav-text" href="/doh/">DoH</a></li>
-          <li id="tos"><a id="tos_a" class="nav-text" href="/tos/">Terms of Service</a></li>
-          <li id="privacy"><a id="privacy_a" class="nav-text" href="/privacy/">Privacy Policy</a></li>
-          <li id="sponsor"><a id="sponsor_a" class="nav-text" href="/sponsor/">Sponsors</a></li>
-          <li id="contact"><a id="contact_a" class="nav-text" href="/contact/">Contact</a></li>
+          <li id="home"><a id="home_a" class="nav-text" href="./">Home</a></li>
+          <li id="about"><a id="about_a" class="nav-text" href="./about/">About</a></li>
+          <li id="faq"><a id="faq_a" class="nav-text" href="./faq/">FAQ</a></li>
+          <li id="dot"><a id="dot_a" class="nav-text" href="./dot/">DoT</a></li>
+          <li id="doh"><a id="doh_a" class="nav-text" href="./doh/">DoH</a></li>
+          <li id="tos"><a id="tos_a" class="nav-text" href="./tos/">Terms of Service</a></li>
+          <li id="privacy"><a id="privacy_a" class="nav-text" href="./privacy/">Privacy Policy</a></li>
+          <li id="sponsor"><a id="sponsor_a" class="nav-text" href="./sponsor/">Sponsors</a></li>
+          <li id="contact"><a id="contact_a" class="nav-text" href="./contact/">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -48,7 +48,7 @@
                     <h4>185.222.222.222 / 185.184.222.222</h4>
                     <p>You are one step away from browsing a faster, more private Internet</p>
                     <div class="primary-button">
-                      <a href="/about/">About</a></div>
+                      <a href="./about/">About</a></div>
                   </li>
                 </div>
               <p class="credit">Copyright © 2019 xTom. All rights reserved.</p>
@@ -57,61 +57,61 @@
       var pathname = window.location.pathname;
       switch(pathname)
       {
-        case '/':
+        case './':
         document.getElementById('zh-nav').style['border-top'] = "2px #000 solid"
         document.getElementById('fa').style.color = "#191717"
         break;
         
-        case '/dot/':
+        case './dot/':
         document.getElementById('zh-nav').style['border-top'] = "2px #223665 solid"
         document.getElementById('zh-nav').style.background = "#223665";
         document.getElementById('dot_a').style.color = "#5e76e4"
         document.getElementById('fa').style.color = "#5e76e4"
         break;
         
-        case '/doh/':
+        case './doh/':
         document.getElementById('zh-nav').style['border-top'] = "2px #086880 solid"
         document.getElementById('zh-nav').style.background = "#086880";
         document.getElementById('doh_a').style.color = "#0aafd4"
         document.getElementById('fa').style.color = "#0aafd4"
         break;
         
-        case '/privacy/':
+        case './privacy/':
         document.getElementById('zh-nav').style['border-top'] = "2px #653b2f solid"
         document.getElementById('zh-nav').style.background = "#653b2f";
         document.getElementById('privacy_a').style.color = "#c2745e"
         document.getElementById('fa').style.color = "#c2745e"
         break;
 
-        case '/faq/':
+        case './faq/':
         document.getElementById('zh-nav').style['border-top'] = "2px #07563c solid"
         document.getElementById('zh-nav').style.background = "#07563c";
         document.getElementById('faq_a').style.color = "#0ec187"
         document.getElementById('fa').style.color = "#0ec187"
         break;
 
-        case '/tos/':
+        case './tos/':
         document.getElementById('zh-nav').style['border-top'] = "2px #244954 solid"
         document.getElementById('zh-nav').style.background = "#244954";
         document.getElementById('tos_a').style.color = "#50a7c2"
         document.getElementById('fa').style.color = "#50a7c2"
         break;
 
-        case '/sponsor/':
+        case './sponsor/':
         document.getElementById('zh-nav').style['border-top'] = "2px #635a0e solid"
         document.getElementById('zh-nav').style.background = "#635a0e";
         document.getElementById('sponsor_a').style.color = "#cebd23"
         document.getElementById('fa').style.color = "#cebd23"
         break;
 
-        case '/contact/':
+        case './contact/':
         document.getElementById('zh-nav').style['border-top'] = "2px #773645 solid"
         document.getElementById('zh-nav').style.background = "#773645";
         document.getElementById('contact_a').style.color = "#df5b7a"
         document.getElementById('fa').style.color = "#df5b7a"
         break;
         
-        case '/about/':
+        case './about/':
         document.getElementById('zh-nav').style['border-top'] = "2px #482f63 solid"
         document.getElementById('zh-nav').style.background = "#482f63";
         document.getElementById('about_a').style.color = "#754ea6"
