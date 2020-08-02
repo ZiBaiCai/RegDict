@@ -200,34 +200,6 @@ body {
   overflow: hidden;
 }
 
-.details[open] {
-  padding: 10px;
-}
-
-.details > :last-child {
-  margin-bottom: 0;
-}
-
-.details[open] summary {
-  margin-bottom: 10px;
-}
-/* summary */
-.summary {
-  display: list-item;
-  background-color: var(--background);
-  padding: 10px;
-  margin: -10px -10px 0;
-}
-
-.details > :not(summary) {
-  margin-top: 0;
-}
-
-.summary::-webkit-details-marker {
-  color: var(--text-main);
-}
-
-
 
 .footer {
     font-size: 13px;
