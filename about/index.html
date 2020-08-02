@@ -1,0 +1,172 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ZiBaiCai - 紫白菜</title>
+    <meta name="keywords" content="紫白菜，ZiBaiCai，baicai Js Org" />
+    <meta name="description" content="紫白菜,引导页"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta name="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="theme-color" content="#563d7c">
+    <link rel="icon" type="image/png" sizes="32x32" href="./static/img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/zibaicai/zibaicai.github.io/static/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/zibaicai/zibaicai.github.io/static/normalize.min.css"/>
+  </head>
+  <body>
+    <!-- header -->
+    <div id="header">
+      <div id="logo-container">
+        <a href="/" class="red" title="logo" >
+<img id="logo" src="https://cdn.jsdelivr.net/gh/StrangerWorld/cndimg/googlelogo/contacts.png"></a>
+      </div>
+
+     <div id="controller-container">
+        <div id="controller">
+          <a class="nav-link active" href="#">&nbsp; Home &nbsp;</a> |  
+          <a class="nav-link active" href="#">&nbsp; Archives &nbsp;</a>丨
+          <a class="nav-link active" href="#">&nbsp; About &nbsp;</a>丨
+ 
+
+        </div>
+      </div>
+    </div>
+
+    <!-- examples -->
+    <div id="examples">
+      <div class="example-section">
+        <h1 class="example-title">ZiBaiCai</h1>
+        <p class="example-content">ZiBaiCai来源于紫白菜，网站托管于GitHub Pages,旗下有BaiCai.js.Org(代码资源），Zibaicai.com/archives(博客)……</p>
+      </div>
+      <div class="example-section">
+        <h1 class="example-title"><a href="https://zibaicai.com/archives" title="博客">Archives</a></h1>
+        <p class="example-content">起用zibaicai.com/Archives（JeKyll搭建）<br>博客，当然是随心所欲!</p>
+      </div>
+      <div class="example-section">
+        <h1 class="example-title">实验室</h1>
+        <h2 class="example-subtitle">……Baicai.Js.Org……</h2>
+        <p class="example-content">我不生产Code,我只是代码的搬用工!……</p>
+      </div>
+      <div class="example-section">
+        <h1 class="example-title">Domain Name</h1>
+        <h2 class="example-subtitle">域名</h2>
+        <p class="example-content">……建设中……</p>
+      </div>
+      <div class="example-section">
+        <h1 class="example-title">Links</h1>
+        <h2 class="example-subtitle">链接</h2>
+        <p class="example-content">……左邻右舍……</p>
+      </div>
+      <div class="example-section">
+        <h1 class="example-title">About</h1>
+        <h2 class="example-subtitle">关于</h2>
+        <p class="example-content">……建设中……</p>
+      </div>
+    </div>
+    <!-- results -->
+    <div id="results">
+    </div>
+    <!-- audio -->
+    <audio id="audio"></audio>
+      
+      <script type="text/javascript">
+      var pathname = window.location.pathname;
+      switch(pathname)
+      {
+        case './':
+        document.getElementById('zh-nav').style['border-top'] = "2px #000 solid"
+        document.getElementById('fa').style.color = "#191717"
+        break;
+        
+        case './dot/':
+        document.getElementById('zh-nav').style['border-top'] = "2px #223665 solid"
+        document.getElementById('zh-nav').style.background = "#223665";
+        document.getElementById('dot_a').style.color = "#5e76e4"
+        document.getElementById('fa').style.color = "#5e76e4"
+        break;
+        
+        case './doh/':
+        document.getElementById('zh-nav').style['border-top'] = "2px #086880 solid"
+        document.getElementById('zh-nav').style.background = "#086880";
+        document.getElementById('doh_a').style.color = "#0aafd4"
+        document.getElementById('fa').style.color = "#0aafd4"
+        break;
+        
+        case './privacy/':
+        document.getElementById('zh-nav').style['border-top'] = "2px #653b2f solid"
+        document.getElementById('zh-nav').style.background = "#653b2f";
+        document.getElementById('privacy_a').style.color = "#c2745e"
+        document.getElementById('fa').style.color = "#c2745e"
+        break;
+
+        case './faq/':
+        document.getElementById('zh-nav').style['border-top'] = "2px #07563c solid"
+        document.getElementById('zh-nav').style.background = "#07563c";
+        document.getElementById('faq_a').style.color = "#0ec187"
+        document.getElementById('fa').style.color = "#0ec187"
+        break;
+
+        case './tos/':
+        document.getElementById('zh-nav').style['border-top'] = "2px #244954 solid"
+        document.getElementById('zh-nav').style.background = "#244954";
+        document.getElementById('tos_a').style.color = "#50a7c2"
+        document.getElementById('fa').style.color = "#50a7c2"
+        break;
+
+        case './sponsor/':
+        document.getElementById('zh-nav').style['border-top'] = "2px #635a0e solid"
+        document.getElementById('zh-nav').style.background = "#635a0e";
+        document.getElementById('sponsor_a').style.color = "#cebd23"
+        document.getElementById('fa').style.color = "#cebd23"
+        break;
+
+        case './contact/':
+        document.getElementById('zh-nav').style['border-top'] = "2px #773645 solid"
+        document.getElementById('zh-nav').style.background = "#773645";
+        document.getElementById('contact_a').style.color = "#df5b7a"
+        document.getElementById('fa').style.color = "#df5b7a"
+        break;
+        
+        case './about/':
+        document.getElementById('zh-nav').style['border-top'] = "2px #482f63 solid"
+        document.getElementById('zh-nav').style.background = "#482f63";
+        document.getElementById('about_a').style.color = "#754ea6"
+        document.getElementById('fa').style.color = "#754ea6"
+        break;
+
+        default:
+        break;
+      }
+    </script>
+      
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/zibaicai/zibaicai.github.io/static/jquery.3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/zibaicai/zibaicai.github.io/static/mainjs"></script>
+<!-- 统计代码开始 -->
+    
+<!-- 统计代码结束 -->
+<span class="footer">
+<p class="copyright">&copy;2020 丨
+<a href="https://musta.ng/" title="野马">野马</a> | 
+<a href="https://github.com" title="github">GitHub</a> | 
+<a href="https://long.ge" title="龙哥"  target="_blank">long.ge</a>
+</p></span>
+<!-- php伪静态自动触发 -->
+    <script type='text/javascript'>
+        $(function(){
+             key = $('#search-input').val();   //php时使用
+          if(key == null || key == ""){
+              $('#search-input').focus();
+          }else{
+        　　　　 $('#search-input').val(key);
+              search(key);
+          }
+        }
+　　   );
+    </script>
+<!-- php伪静态自动触发结束 -->
+  </body>
+</BR>
+</html>
