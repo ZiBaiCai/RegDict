@@ -70,6 +70,77 @@
     </div>
     <!-- audio -->
     <audio id="audio"></audio>
+      
+      <script type="text/javascript">
+      var pathname = window.location.pathname;
+      switch(pathname)
+      {
+        case './':
+        document.getElementById('zh-nav').style['border-top'] = "2px #000 solid"
+        document.getElementById('fa').style.color = "#191717"
+        break;
+        
+        case './dot/':
+        document.getElementById('zh-nav').style['border-top'] = "2px #223665 solid"
+        document.getElementById('zh-nav').style.background = "#223665";
+        document.getElementById('dot_a').style.color = "#5e76e4"
+        document.getElementById('fa').style.color = "#5e76e4"
+        break;
+        
+        case './doh/':
+        document.getElementById('zh-nav').style['border-top'] = "2px #086880 solid"
+        document.getElementById('zh-nav').style.background = "#086880";
+        document.getElementById('doh_a').style.color = "#0aafd4"
+        document.getElementById('fa').style.color = "#0aafd4"
+        break;
+        
+        case './privacy/':
+        document.getElementById('zh-nav').style['border-top'] = "2px #653b2f solid"
+        document.getElementById('zh-nav').style.background = "#653b2f";
+        document.getElementById('privacy_a').style.color = "#c2745e"
+        document.getElementById('fa').style.color = "#c2745e"
+        break;
+
+        case './faq/':
+        document.getElementById('zh-nav').style['border-top'] = "2px #07563c solid"
+        document.getElementById('zh-nav').style.background = "#07563c";
+        document.getElementById('faq_a').style.color = "#0ec187"
+        document.getElementById('fa').style.color = "#0ec187"
+        break;
+
+        case './tos/':
+        document.getElementById('zh-nav').style['border-top'] = "2px #244954 solid"
+        document.getElementById('zh-nav').style.background = "#244954";
+        document.getElementById('tos_a').style.color = "#50a7c2"
+        document.getElementById('fa').style.color = "#50a7c2"
+        break;
+
+        case './sponsor/':
+        document.getElementById('zh-nav').style['border-top'] = "2px #635a0e solid"
+        document.getElementById('zh-nav').style.background = "#635a0e";
+        document.getElementById('sponsor_a').style.color = "#cebd23"
+        document.getElementById('fa').style.color = "#cebd23"
+        break;
+
+        case './contact/':
+        document.getElementById('zh-nav').style['border-top'] = "2px #773645 solid"
+        document.getElementById('zh-nav').style.background = "#773645";
+        document.getElementById('contact_a').style.color = "#df5b7a"
+        document.getElementById('fa').style.color = "#df5b7a"
+        break;
+        
+        case './about/':
+        document.getElementById('zh-nav').style['border-top'] = "2px #482f63 solid"
+        document.getElementById('zh-nav').style.background = "#482f63";
+        document.getElementById('about_a').style.color = "#754ea6"
+        document.getElementById('fa').style.color = "#754ea6"
+        break;
+
+        default:
+        break;
+      }
+    </script>
+      
     <script type="text/javascript" src="/static/jquery.3.2.1.min.js"></script>
     <script type="text/javascript" src="/static/mainjs"></script>
 <!-- 统计代码开始 -->
