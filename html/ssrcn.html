@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>欢迎访问本网站！</title>
+<style type="text/css">
+html{margin:0;background-color:#eee;color:#444;font-size:100%;font-family:Lucida Grande,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;line-height:1.5}
+h1{word-wrap:break-word;font-size:2em;line-height:.9}
+h2{font-size:1em;line-height:1}
+.page{margin:30px auto;padding:20px;width:80%;max-width:780pt;background-color:#fff}
+.sep{padding:0 .5em}
+.header{padding:3px 20px;background:rgba(15,165,217,.9) linear-gradient(to top right,rgba(0,0,0,0)30%,rgba(30,10,100,.7)100%) repeat scroll 0 0;color:#fff;text-align:left;line-height:1}
+.content{padding:30px 10px;text-align:center}
+#qrcode{padding-top:20px}
+a.btn{display:inline-block;margin:auto;margin:10px;padding-top:10px;width:188px;height:30px;border-radius:3px;background-color:#0fa5d9;color:#fff;text-decoration:none}
+.pulse{-webkit-animation-iteration-count:infinite;-webkit-animation-name:pulse;-webkit-animation-duration:.8s}
+.footer,a.btn{text-align:center}
+.footer{padding:10px 10%;border-top:1px solid #ccc;color:#444;font-size:.8em}
+@-webkit-keyframes pulse{50%{background-color:#2471b1;-webkit-box-shadow:0 0 2pc #0fa5d9}}
+@media (max-width:640px){.page{margin:0;padding:0;width:100%}}
+</style>
+<script type="text/javascript">
+window.onload = function() {
+	var dn = window.location.hostname;
+	var dn = window.location.hostname + '$';
+	dn = dn.match(/[^.]+\.(com.cn|com|net.cn|net|org.cn|org|ge|cn|asia|ba|biz|cc|et|club|co|design|hk|info|live|mobi|me|my|name|pro|top|tv|vip|xyz)(\$)/g);
+	dn = dn[0].replace('$', '');
+	document.title = '欢迎访问本网站，请记住本站唯一网址 - ' + dn;
+	document.getElementsByClassName("domain")[0].innerHTML = dn;
+	document.getElementById("qrcode").setAttribute(img src="/i/eg_tulip.jpg" /)
+</head>
+<body>
+<div class="page">
+<div class="header">
+		<h1 class="domain"></h1>
+	<p>
+		网站正在搭建中，这是一个纯私人的网站，与任何品牌和他人无关，并为未来而规划！
+	</p>
+</div>
+<div class="content">
+	<h2>如果您有好点子、意见建议等想法，请联系我。</h2>
+	<img id="qrcode" src>
+	<p>
+		微信（wechat）/ QQ：123456789
+	</p>
+	<p>
+		邮箱（Mail）：abc@abc.com 
+	</p>
+</div>
+<div class="footer">
+	<p>
+		这是一个通用且非商业性、独立的私人网站(建设中)，善意取得、所有及使用，并未侵损任何人的任何权利，与任何公司、组织、品牌和商标无关。</p>
+</div>
+</div>
+</body>
+</html>
