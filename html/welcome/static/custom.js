@@ -13,7 +13,7 @@ Author: #
 
         main_fun: function () {
            
-            var count = new countUp("offer-price", 10, 666, 0, 5); 
+            var count = new countUp("offer-price", 10, 888, 0, 5); 
 
             window.onload = function () {
                         count.start();
