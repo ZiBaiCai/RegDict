@@ -43,19 +43,21 @@
         <h1 class="example-title">ZiBaiCai</h1>
         <p class="example-content">ZiBaiCai来源于紫白菜，网站托管于GitHub Pages,旗下有BaiCai.js.Org(代码资源），Zibaicai.com/archives(博客)……</p>
       </div>
- <div id="gitalk-container">
-var gitalk = new Gitalk({
-  clientID: 'GitHub Application Client ID',
-  clientSecret: 'GitHub Application Client Secret',
-  repo: 'GitHub repo',
-  owner: 'GitHub repo owner',
-  admin: ['GitHub repo owner and collaborators, only these guys can initialize github issues'],
+<h2>Gitalk</h2>
+   <div id="gitalk-container"></div>
+ <script>
+	 const gitalk = new Gitalk({
+  clientID: '649f33d0da1228961bd3',
+  clientSecret: 'b8d4a2718a261caf0cd3ba2a06cfbf536efb5d1f',
+  repo: 'gitalk-zibaicai',
+  owner: 'zibaicai',
+  admin: ['zibaicai'],
   id: location.pathname,      // Ensure uniqueness and length less than 50
   distractionFreeMode: false  // Facebook-like distraction free mode
 })
 
 gitalk.render('gitalk-container')
- </div>
+		 </script>
   
     </div>
     <!-- results -->
