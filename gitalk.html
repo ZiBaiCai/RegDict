@@ -52,8 +52,8 @@
   repo: 'gitalk-zibaicai',
   owner: 'ZiBaiCai',
   admin: [ZiBaiCai],
-  id: location.pathname,      // Ensure uniqueness and length less than 50
-  distractionFreeMode: false  // Facebook-like distraction free mode
+  id: location.pathname,      
+  distractionFreeMode: false  
 })
 
 gitalk.render('gitalk-container')
@@ -62,16 +62,16 @@ gitalk.render('gitalk-container')
 <div id="gitalk-container" style="margin: 30px;padding-bottom: 30px;"></div>
          <script>
             var gitalk = new Gitalk({
-                clientID: '649f33d0da1228961bd3', // GitHub Application Client ID
-                clientSecret: '9af5b00bb0fe358bf44020aa97bddf72b434a620', // GitHub Application Client Secret
-                repo: 'gitalk-zibaicai',      // 存放评论的仓库
-                owner: 'ZiBaiCai',          // 仓库的创建者，
-                admin: [ZiBaiCai],        // 如果仓库有多个人可以操作，那么在这里以数组形式写出
-                id: md5(location.pathname),      // 用于标记评论是哪个页面的，确保唯一，并且长度小于50
+                clientID: '649f33d0da1228961bd3', 
+                clientSecret: '9af5b00bb0fe358bf44020aa97bddf72b434a620', 
+                repo: 'gitalk-zibaicai',    
+                owner: 'ZiBaiCai',         
+                admin: [ZiBaiCai],        
+                id: md5(location.pathname),     
                 title: document.title,
                 body:  '文章链接：'+ decodeURIComponent(location.origin+location.pathname),
             })
-            gitalk.render('gitalk-container');    // 渲染Gitalk评论组件
+            gitalk.render('gitalk-container');    
         </script>
   
     </div>
